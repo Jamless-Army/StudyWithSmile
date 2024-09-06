@@ -1,0 +1,11 @@
+const dndButton = document.getElementById('dnd-button');
+
+dndButton.addEventListener('click', () => {
+  if (dndButton.classList.contains('active')) {
+    dndButton.classList.remove('active');
+    dndButton.textContent = 'Do Not Disturb';
+  } else {
+    dndButton.classList.add('active');
+    dndButton.textContent = 'Disturb Me';
+  }
+});
